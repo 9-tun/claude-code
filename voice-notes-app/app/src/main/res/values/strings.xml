@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Obsidian Voice Notes</string>
+
+    <string name="record">녹음</string>
+    <string name="stop">정지</string>
+    <string name="save_to_vault">Obsidian 노트로 저장</string>
+    <string name="choose_vault_folder">동기화 폴더 선택</string>
+
+    <string name="notif_channel_name">녹음 중</string>
+    <string name="notif_recording_title">음성 인식 진행 중</string>
+    <string name="notif_recording_text">탭하여 앱으로 돌아가기</string>
+
+    <string name="model_downloading">한국어 음성 모델 다운로드 중…</string>
+    <string name="model_ready">모델 준비 완료</string>
+</resources>

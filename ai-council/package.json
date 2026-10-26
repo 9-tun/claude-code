@@ -1,0 +1,28 @@
+{
+  "name": "ai-council",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Slack bot that asks Claude, GPT and Gemini the same question via their CLIs and synthesizes the answers",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "check": "tsx src/check.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@slack/bolt": "^4.4.0",
+    "cross-spawn": "^7.0.6",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.6",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

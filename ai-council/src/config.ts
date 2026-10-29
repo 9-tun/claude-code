@@ -54,6 +54,8 @@ const ALL_MEMBERS: CouncilMember[] = [
       "never",
       "--output-last-message",
       "{out}",
+      // Optional model override, e.g. when the CLI default is not available on your plan.
+      ...(env("CODEX_MODEL") ? ["-m", env("CODEX_MODEL")] : []),
       "-",
     ],
     readsOutputFile: true,

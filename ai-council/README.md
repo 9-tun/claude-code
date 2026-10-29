@@ -66,6 +66,7 @@ npm start
 | `COUNCIL_REVIEW` | `true`면 익명 교차 평가 단계를 추가. 품질은 올라가지만 호출이 약 2배, 시간도 늘어남 |
 | `CLI_TIMEOUT_SEC` | 모델별 응답 제한 시간 (기본 300초) |
 | `*_BIN` | CLI가 PATH에 없을 때 전체 경로 지정 |
+| `CODEX_MODEL` | Codex 기본 모델이 계정에서 지원되지 않을 때 모델 강제 지정 (`codex`에서 `/model`로 확인) |
 
 ## 5. 동작 방식
 
@@ -81,6 +82,7 @@ npm start
 | 증상 | 조치 |
 |---|---|
 | `'codex' not found` | `.env`에 `CODEX_BIN`을 전체 경로로 지정 (Windows: `where codex`로 확인) |
+| Codex `model is not supported when using Codex with a ChatGPT account` | `npm i -g @openai/codex@latest`로 업데이트하고, 그래도 안 되면 `.env`에 `CODEX_MODEL` 지정 |
 | `Timed out` | 해당 CLI에 로그인되어 있는지 직접 실행해 확인하고, 필요하면 `CLI_TIMEOUT_SEC`를 늘림 |
 | Gemini `Please set an Auth method` | `gemini`를 한 번 실행해 Google 로그인 |
 | 채널에서 반응 없음 | bot이 채널에 초대됐는지, 채널 ID와 `ALLOWED_USER_IDS`가 맞는지 확인 |
